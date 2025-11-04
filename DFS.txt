@@ -1,0 +1,16 @@
+DFS(Depth first Search) pseudo code:-
+First we will:-
+1.Visit a node.
+2.Mark it as visited.
+3.Explore each unvisited neighbor.
+4.When all neighbors are visited, backtrack to the previous node.
+5.Continue until all reachable nodes are visited.
+
+DFS(G, v) {
+    visited[v] = 1;
+    for all w adjacent to v {
+        if (!visited[w]) {
+            DFS(G, w);
+        }
+    }
+}
